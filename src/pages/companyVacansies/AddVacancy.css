@@ -1,0 +1,166 @@
+/* Asosiy konteyner */
+.add-vacancy-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sarlavha */
+.add-vacancy-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #2d3748;
+  text-align: center;
+}
+
+/* Forma */
+.vacancy-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Forma guruhlari */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Qatorlar (time inputlar uchun) */
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Label stil */
+label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+/* Input, select va textarea */
+input,
+select,
+textarea {
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+/* Talablar qo'shish uchun input */
+.requirements-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.requirements-input input {
+  flex: 1;
+}
+
+/* Talablar ro'yxati */
+.requirements-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Talab elementi */
+.requirement-item {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #f7fafc;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+}
+
+/* Qo'shish va o'chirish tugmalari */
+.add-req-btn,
+.remove-req-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #edf2f7;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.add-req-btn:hover {
+  background-color: #e2e8f0;
+}
+
+.remove-req-btn {
+  background-color: transparent;
+  color: #e53e3e;
+}
+
+.remove-req-btn:hover {
+  background-color: #fed7d7;
+}
+
+/* Submit tugmasi */
+.submit-btn {
+  background-color: #4299e1;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #3182ce;
+}
+
+/* Responsive dizayn */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .add-vacancy-container {
+    padding: 1rem;
+  }
+}
+
+/* Iconlar */
+.input-icon {
+  color: #718096;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.requirements-input select {
+  flex-grow: 1;
+  margin-right: 8px;
+}

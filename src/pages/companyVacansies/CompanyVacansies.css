@@ -1,0 +1,202 @@
+/* Asosiy konteyner */
+.vacancy-container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sarlavha */
+.vacancy-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+/* Vakansiya yo'qligi xabari */
+.no-vacancies {
+  color: #666;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Vakansiyalar gridi */
+.vacancy-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+/* Vakansiya kartasi */
+.vacancy-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0; /* O'zgartirildi */
+  transition: all 0.3s ease;
+  background-color: white;
+  overflow: hidden; /* Yangi qo'shildi */
+}
+
+/* Header container uchun yangi stil */
+.vacancy-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+/* Add vacancy link uchun stil */
+.add-vacancy-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.add-vacancy-link:hover {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+.add-icon {
+  stroke-width: 2.5px;
+}
+
+/* Qolgan stillar o'zgarishsiz qoldi */
+/* ... */
+.vacancy-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Link uchun stil */
+.vacancy-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 20px; /* Karta paddingini linkka ko'chirdik */
+}
+
+/* Kartaning header qismi */
+.vacancy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.vacancy-position {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #2d3748;
+}
+
+/* Daraja (level) stili */
+.vacancy-level {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.vacancy-level.junior {
+  background-color: #ebf8ff;
+  color: #2b6cb0;
+}
+
+.vacancy-level.middle {
+  background-color: #faf5ff;
+  color: #6b46c1;
+}
+
+.vacancy-level.senior {
+  background-color: #f0fff4;
+  color: #2f855a;
+}
+
+/* Tavsif */
+.vacancy-description {
+  color: #4a5568;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+/* Detallar */
+.vacancy-details {
+  margin-bottom: 16px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.detail-icon {
+  margin-right: 8px;
+  color: #718096;
+}
+
+/* Talablar bo'limi */
+.requirements-section {
+  margin-top: 12px;
+}
+
+.requirements-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2d3748;
+}
+
+.requirements-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.requirement-item {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  background-color: #f7fafc;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #4a5568;
+}
+
+.requirement-icon {
+  margin-right: 4px;
+  color: #ecc94b;
+}
+
+/* Responsive dizayn */
+@media (min-width: 768px) {
+  .vacancy-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .vacancy-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .vacancy-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+}

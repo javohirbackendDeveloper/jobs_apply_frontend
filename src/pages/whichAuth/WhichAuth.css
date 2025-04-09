@@ -1,0 +1,54 @@
+/* WhichAuth.css */
+
+/* Container for the signup options */
+.auth-choice-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.auth-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Options wrapper */
+.auth-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual option style */
+.auth-option {
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #4f8bf9; /* Light blue background */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.auth-option:hover {
+  background-color: #6a9eff; /* Lighter blue when hovered */
+}
+
+/* Responsive Design: Stack the options vertically on smaller screens */
+@media (max-width: 768px) {
+  .auth-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .auth-option {
+    width: 80%;
+    margin: 10px 0;
+  }
+}

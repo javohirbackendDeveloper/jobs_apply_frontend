@@ -1,0 +1,54 @@
+.login-choice-container {
+  text-align: center;
+  padding: 30px;
+  background-color: #eef2f7; /* Soft background for the login section */
+  border-radius: 10px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.login-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+/* Wrapper for the login options */
+.login-options {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Styling each login option */
+.login-option {
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #ff8c42; /* Warm color to indicate login */
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 200px;
+  text-align: center;
+}
+
+.login-option:hover {
+  background-color: #ff7b33; /* Slightly darker on hover */
+  transform: scale(1.05); /* Scale up slightly for a nice hover effect */
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+  .login-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .login-option {
+    width: 80%; /* Make the buttons take most of the width on small screens */
+    margin-bottom: 15px;
+  }
+}

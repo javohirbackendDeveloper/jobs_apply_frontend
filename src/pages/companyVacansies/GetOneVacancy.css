@@ -1,0 +1,200 @@
+/* Base Styles */
+.vacancy-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.error-message {
+  color: #d32f2f;
+  text-align: center;
+  padding: 20px;
+  background: #ffebee;
+  border-radius: 4px;
+  margin: 20px;
+}
+
+/* Header Styles */
+.vacancy-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.company-logo-container {
+  margin: 0 auto 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.company-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.vacancy-header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.company-name {
+  font-size: 20px;
+  color: #7f8c8d;
+  margin-bottom: 5px;
+}
+
+.location {
+  font-size: 16px;
+  color: #95a5a6;
+  margin-bottom: 15px;
+}
+
+.job-meta {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.job-level,
+.work-hours {
+  background: #f5f5f5;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Details Grid */
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+/* Section Styles */
+.detail-section {
+  margin-bottom: 30px;
+}
+
+.detail-section h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
+}
+
+.detail-section h3 {
+  font-size: 18px;
+  margin: 15px 0 10px;
+  color: #34495e;
+}
+
+.detail-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.company-info p,
+.position-details p {
+  margin: 8px 0;
+}
+
+/* Requirements Styles */
+.requirements-section {
+  margin-bottom: 20px;
+}
+
+.requirements-section ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.requirements-section li {
+  margin-bottom: 8px;
+}
+
+/* Apply Button */
+.apply-section {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+}
+
+.apply-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 200px;
+  justify-content: center;
+}
+
+.apply-button:hover {
+  background-color: #2980b9;
+}
+
+.apply-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .vacancy-header h1 {
+    font-size: 32px;
+  }
+
+  .company-name {
+    font-size: 22px;
+  }
+
+  .location {
+    font-size: 18px;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .detail-section h2 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .vacancy-container {
+    padding: 40px;
+  }
+
+  .company-logo-container {
+    width: 120px;
+    height: 120px;
+  }
+}

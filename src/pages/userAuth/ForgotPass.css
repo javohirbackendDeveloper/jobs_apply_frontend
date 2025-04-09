@@ -1,0 +1,201 @@
+/* ForgotPass.css */
+
+.forgot-pass-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  padding: 20px;
+}
+
+.forgot-pass-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  text-align: center;
+}
+
+.forgot-pass-header h2 {
+  color: #2d3748;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #718096;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.forgot-pass-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #4a5568;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+.form-group input.input-error {
+  border-color: #f56565;
+}
+
+.error-message {
+  color: #f56565;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+.submit-btn {
+  background-color: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.submit-btn:hover {
+  background-color: #3182ce;
+}
+
+.submit-btn:disabled {
+  background-color: #bee3f8;
+  cursor: not-allowed;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.success-message {
+  margin: 20px 0;
+}
+
+.success-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  background-color: #48bb78;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-icon svg {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.success-message p {
+  color: #2d3748;
+  margin-bottom: 20px;
+}
+
+.back-to-login {
+  background-color: transparent;
+  color: #4299e1;
+  border: 1px solid #4299e1;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.back-to-login:hover {
+  background-color: #ebf8ff;
+}
+
+.forgot-pass-footer {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #718096;
+}
+
+.login-link {
+  color: #4299e1;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .forgot-pass-card {
+    padding: 30px 20px;
+  }
+
+  .forgot-pass-header h2 {
+    font-size: 20px;
+  }
+
+  .submit-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .forgot-pass-container {
+    padding: 10px;
+  }
+
+  .forgot-pass-card {
+    padding: 25px 15px;
+  }
+}

@@ -1,0 +1,130 @@
+/* Container styles */
+.reset-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  padding: 20px;
+}
+
+.reset-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  text-align: center;
+}
+
+.reset-header h2 {
+  color: #2d3748;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.reset-header p {
+  color: #718096;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+/* Form styles */
+.reset-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reset-form div {
+  text-align: left;
+}
+
+.reset-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #4a5568;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.password-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-input input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.password-input button {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.reset-button {
+  background-color: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #3182ce;
+}
+
+.reset-button:disabled {
+  background-color: #bee3f8;
+  cursor: not-allowed;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .reset-card {
+    padding: 30px 20px;
+  }
+
+  .reset-header h2 {
+    font-size: 20px;
+  }
+
+  .reset-button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .password-input input {
+    font-size: 16px;
+  }
+
+  .password-input button {
+    right: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .reset-container {
+    padding: 10px;
+  }
+
+  .reset-card {
+    padding: 25px 15px;
+  }
+}

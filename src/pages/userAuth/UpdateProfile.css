@@ -1,0 +1,203 @@
+.update-profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.update-profile-title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.update-profile-form {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.form-section {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #2c3e50;
+  flex-grow: 1;
+}
+
+.section-icon {
+  margin-right: 10px;
+  color: #7f8c8d;
+}
+
+.section-content {
+  padding: 15px 0 5px 0;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #34495e;
+  font-weight: 500;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.input-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.profile-picture-preview {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f0f0f0;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-input-label {
+  display: block;
+  text-align: center;
+  padding: 8px 15px;
+  background-color: #f8f9fa;
+  color: #495057;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.file-input-label:hover {
+  background-color: #e9ecef;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cancel-button,
+.save-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cancel-button {
+  text-decoration: none;
+  background-color: #f8f9fa;
+  color: #495057;
+  border: 1px solid #ddd;
+}
+
+.cancel-button:hover {
+  background-color: #e9ecef;
+}
+
+.save-button {
+  background-color: #3498db;
+  color: white;
+  border: 1px solid #3498db;
+}
+
+.save-button:hover {
+  background-color: #2980b9;
+}
+
+/* Add to your CSS file */
+.level-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+
+.level-select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* For the section header icon */
+.section-header .award-icon {
+  margin-right: 10px;
+  color: #7f8c8d;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .update-profile-container {
+    padding: 15px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .cancel-button,
+  .save-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-header h2 {
+    font-size: 16px;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    font-size: 14px;
+  }
+}
