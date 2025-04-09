@@ -9,7 +9,6 @@ export default defineConfig({
         manualChunks: {
           react: ["react", "react-dom"],
           router: ["react-router-dom"],
-          vendor: ["lodash", "axios"],
         },
       },
     },
