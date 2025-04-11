@@ -41,10 +41,13 @@ function Chats() {
   useEffect(() => {
     if (!currentPerson) return;
 
-    socketRef.current = io("http://localhost:4001", {
-      query: { userId: currentPerson },
-      transports: ["websocket"],
-    });
+    socketRef.current = io(
+      "https://jobs-apply-backend-24.onrender.com/graphql",
+      {
+        query: { userId: currentPerson },
+        transports: ["websocket"],
+      }
+    );
 
     socketRef.current.on("connect", () => {
       console.log("Socket connected successfully!");
